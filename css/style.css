@@ -1,0 +1,49 @@
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    color: #91110F;
+    background-color: #E3F8BA;
+
+}
+
+h3 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 29pt;
+    text-align: center;
+
+
+
+}
+
+header{text-align: center;
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+#hero {
+text-align: center;
+background-color: #C4514F;
+border: 7px #F77CEF;
+border-style: double;
+
+
+} 
+
+footer{
+    text-align: center;
+    color: #C4C44F;
+
+}
+
+
+#personal {
+    text-align:left;
+}
+
+#aboutme {
+    text-align:left;
+}
