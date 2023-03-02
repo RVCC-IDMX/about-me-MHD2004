@@ -47,6 +47,32 @@ footer{
 }
 
 
+#gallery {
+
+border: #3c0f91; 
+border-style: solid;
+
+}
+
+
+
+#textdemo p::first-letter{
+        font-size: 3em;
+        color: rgb(0, 139, 46);
+        box-shadow: -10px 0 10px rgb(62, 63, 61);
+        background-color: gainsboro;
+        font-weight: bold;
+        text-shadow: #E3F8BA;
+        box-shadow: #E3F8BA;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    
+    }
+
+
+
+
+
+
 #personal {
     text-align:left;
 }
