@@ -38,8 +38,11 @@ background-color: #C4514F;
 border: 7px #F77CEF;
 border-style: double;
 
-
 } 
+
+#hero img {
+    width:300px;
+}
 
 footer{
     text-align: center;
@@ -55,7 +58,13 @@ border-style: solid;
 
 }
 
+#gallery img {
+    max-width: 100%;
+}
 
+
+
+/* Dropcaps */
 
 #textdemo p::first-letter{
         font-size: 3em;
@@ -66,13 +75,9 @@ border-style: solid;
         text-shadow: #E3F8BA;
         box-shadow: #E3F8BA;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        border-bottom-right-radius: 0.4cm;
     
     }
-
-
-
-
-
 
 #personal {
     text-align:left;
@@ -92,7 +97,7 @@ border-style: solid;
 
 }
 
-
+/* tablet size */
 @media screen and (min-width: 60em)  {
     figure {
         display:grid;
@@ -105,6 +110,37 @@ border-style: solid;
         align-items: center;
         font-size: 2rem;
         margin-left: 1rem;
+    }
+
+    figure img {
+        width:100%
+    }
+
+    #lit div {
+        max-width:100%;
+        columns: 40rem;
+    }
+    
+}
+
+/* large screen size */
+
+@media screen and (min-width: 100em) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr{
+        display: none;
+    }
+
+    #gallery h2 {
+        grid-column: 1/-1;
+    }
+
+    figure {
+        display: block;
     }
     
 }
