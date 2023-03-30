@@ -130,14 +130,11 @@ color: #061a77;
 border: 4.6px solid rgb(131, 129, 10);
 padding:1em;
 border-radius: 2em;
-
-
 }
 
 #contact label{
     margin:.2ex;
-   
-}
+   }
 
 #contact fieldset fieldset {
     grid-template-columns: 30px auto;
@@ -151,7 +148,6 @@ border: 2px solid rgb(106, 146, 13);
 font-weight: bolder;
 font-style: oblique;
 font-size: 25px;
-
 }
 
 
