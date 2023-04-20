@@ -1,7 +1,7 @@
 body {
 
     font-family: 'Open Sans', sans-serif;
-    color: #91110F;
+    color: hsl(1, 81%, 37%);
     background-color: #E3F8BA;
 
 }
@@ -37,8 +37,10 @@ h2 {
 #hero {
 text-align: center;
 background-color: #C4514F;
-border: 7px #F77CEF;
+border: 7px #e1f77c;
 border-style: double;
+border-radius: 20px;
+box-shadow: gray;
 
 }
 
@@ -57,6 +59,9 @@ footer{
 
 border: #3c0f91; 
 border-style: solid;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+max-width: 100%;
 
 }
 
@@ -104,7 +109,7 @@ border-style: solid;
 
 /* Contact */
 #contact{
-max-width: 3500px;
+max-width: 500px;
 margin-left:auto;
 margin-right: auto;
 }
