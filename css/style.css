@@ -1,7 +1,7 @@
 body {
 
     font-family: 'Open Sans', sans-serif;
-    color: hsl(1, 81%, 37%);
+    color: hsl(1, 77%, 19%);
     background-color: #E3F8BA;
 
 }
@@ -36,16 +36,15 @@ h2 {
 
 #hero {
 text-align: center;
-background-color: #C4514F;
 border: 7px #e1f77c;
-border-style: double;
 border-radius: 20px;
-box-shadow: gray;
-
+font-size: 25px;
 }
 
 #hero img {
-    width:300px;
+    margin: 10px;
+    width:250px;
+    border-radius: 200px;
 }
 
 footer{
@@ -65,10 +64,31 @@ max-width: 100%;
 
 }
 
-#gallery img {
+#gallery img :hover {
+    background-color: bisque;
     max-width: 100%;
 }
 
+#gallery {
+position: relative;
+}
+
+#gallery{
+display: block;
+width: 100%;
+}
+
+#figcaption{
+position: absolute;
+top: 0;
+left:0;
+width:100%;
+height:100%;
+background: rgba(0,0,0,0.6);
+color:white
+
+
+}
 
 
 
@@ -94,6 +114,7 @@ max-width: 100%;
 
 #aboutme {
     text-align:left;
+    margin: 50px;
 }
 
 #hobbies ul{
