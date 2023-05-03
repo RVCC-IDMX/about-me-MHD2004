@@ -21,17 +21,6 @@
 </head>
 
 <body>
-
-    <nav class="hamburger">
-    <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
-    <label for="nav__checkbox" class="nav__toggle">
-        
-    </label>
-
-</nav>
-
-
-
     <!-- Visitors will see all the content in the body element-->
 
 
@@ -39,6 +28,15 @@
         <!--Header contains logo and page Title. Head commandn is different than Header Ccommand-->
 
 <nav class="navbar">
+    <input type="checkbox" id="nav_checkbox" class="nav_checkbox">
+            <label for="nav_checkbox" class="nav_toggle">
+                <div class="menu">
+                    <img src="img/menu-icon.svg" alt="Black Hamburger" width="40px">
+                </div>
+                <div class="close">
+                    <img src="img/icons8-close.svg" alt="Black X" width="40px">
+                </div>
+            </label>
     <div class="logo">
                  <img 
                  src="/img/Logo-webdev.svg" 
@@ -48,6 +46,11 @@
 
         <h1 class="logo-title">WEB DEVELOPMENT I</h1>
     </div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
     <div class="navbar-links">
         <ul>
             <li><a class="nav-links" href="#hero">Bio</a></li>

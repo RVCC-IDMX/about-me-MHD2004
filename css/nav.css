@@ -1,120 +1,170 @@
 /* make scrolling smooth */
-
-html{
-scroll-behavior: smooth;
-
-}
-
-
-/* 
- get rid of padding & sizing on body so
- header is at top
-*/
-
-
-body {
-box-sizing: border-box;
-padding:0;
-margin: 0;
-}
-
-
-/* add some padding back to rest of page */
-
-main {
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* get rid of padding & sizing on body so header is at top */
+  body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* add some padding back to rest of page */
+  main {
     padding: 2vw;
-}
-
-
-
-/* navbar */
-.navbar{
-background-color: black;
-color:rgb(255, 255, 255);
-display: flex;
-flex-direction: column;
-font-size: 1.3rem;
-margin-bottom: 1rem;
-}
-
-
-/* logo */
-
-.logo{
+  }
+  
+  /* navbar */
+  .navbar {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* logo */
+  .logo {
     display: flex;
     align-items: center;
-}
-
-.logo img{
-height: 4vw;
-width: 4vw;
-}
-
-/* navigation list */
-
-.navbar-links li{
-list-style:circle;
-display:block;
-padding: 0.2em 0;
-justify-content: space-between;
-color:rgb(0, 195, 255);
-}
-
-
-/*  
- style all a tags in header 
- and then on hover
-*/
-
-.navbar-links {
-    color:rgb(67, 109, 223);
+  }
+  
+  .logo img {
+    height: 4vw;
+    width: 4vw;
+  }
+  
+  /* navigation list */
+  .navbar-links li {
+    list-style: circle;
+    display: block;
+    padding: 0.2em 0;
+    justify-content: space-between;
+    color: rgb(0, 195, 255);
+  }
+  
+  /* style all a tags in header and then on hover */
+  .navbar-links {
+    color: rgb(67, 109, 223);
     background-attachment: rgb(233, 131, 131);
     font-size: 1.2em;
-    padding:1rem 0.3rem;
+    padding: 1rem 0.3rem;
     letter-spacing: 1px;
     text-decoration: none;
     display: inline-block;
-}
-
-.navbar-links a:hover,
-.navbar-links a:focus {
-color:rgb(126, 119, 119);
-background-color: beige;
-border-radius: 6px;
-outline: none;
-}
-
-.nav-links {
-    color:rgb(255, 255, 255);
+  }
+  
+  .navbar-links a:hover,
+  .navbar-links a:focus {
+    color: rgb(126, 119, 119);
+    background-color: beige;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  .nav-links {
+    color: rgb(255, 255, 255);
     margin: 15px;
-}
-
-
-
-
-/* 
-media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
-*/
-
-@media screen and (min-width:5rem) {
-.navbar-links{
-display: flex;
-flex-direction: row;
-justify-content:space-evenly;
-}
-
-.navbar {
-flex-direction: row;
-justify-content: space-evenly;
-}
-
-.navbar ul {
-display: flex;
-justify-content: space-evenly;
-}
-
-
-    
-}
+  }
+  
+  /* media query for non-mobile nav bar */
+  @media screen and (min-width: 6rem) {
+    .navbar-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .navbar {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .navbar ul {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    /* positioning Hamburger icon */
+    .nav_toggle {
+      position: absolute;
+      cursor: pointer;
+      margin: 0rem 1rem;
+      align-items: right;
+    }
+  
+    .close {
+      display: none;
+    }
+  
+    .nav_toggle {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  
+    .nav_checkbox {
+      display: none;
+    }
+  
+    .nav_menu {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      margin: 1rem;
+    }
+  
+    .nav_menu li {
+      list-style: none;
+      display: block;
+    }
+  
+    .nav_menu :first-child {
+      margin-right: auto;
+      display: block;
+    }
+  
+    .nav_menu a {
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 1.2rem;
+    }
+  
+    .nav img {
+      width: 1.5rem;
+      fill: aliceblue;
+    }
+  
+    #nav_checkbox:checked ~ ul.navbar-links li {
+      display: block;
+    }
+  
+    .close {
+      display: none;
+    }
+  
+    #nav_checkbox:checked ~ .nav_toggle .close {
+      display: block;
+    }
+  
+    .menu {
+      display: block;
+    }
+  
+    #nav_checkbox:checked ~ .nav_toggle .menu {
+      display: none;
+    }
+  
+    .close {
+      display: none;
+    }
+  
+    .navbar-links {
+      display: flex;
+    }
+  }
+  

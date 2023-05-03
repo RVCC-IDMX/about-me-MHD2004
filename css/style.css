@@ -1,38 +1,26 @@
 body {
-
     font-family: 'Open Sans', sans-serif;
     color: hsl(1, 77%, 19%);
     background-color: #E3F8BA;
-
 }
 
 h3 {
-
     font-family: 'Montserrat', sans-serif;
     font-size: 29pt;
     text-align: center;
-
-
-
 }
 
-header{text-align: center;
+header{
+    text-align: center;
     font-size: 10pt;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 29pt;
     text-align: center;
-   
-    
 }
-
-
-
-
 
 #hero {
 text-align: center;
@@ -50,18 +38,14 @@ font-size: 25px;
 footer{
     text-align: center;
     color: #C4C44F;
-
 }
 
-
 #gallery {
-
 border: #3c0f91; 
 border-style: solid;
 border-top-right-radius: 20px;
 border-bottom-left-radius: 20px;
 max-width: 100%;
-
 }
 
 #gallery img :hover {
@@ -86,11 +70,7 @@ width:100%;
 height:100%;
 background: rgba(0,0,0,0.6);
 color:white
-
-
 }
-
-
 
 
 /* Dropcaps */
@@ -105,8 +85,7 @@ color:white
         box-shadow: #E3F8BA;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
         border-bottom-right-radius: 0.4cm;
-    
-    }
+}
 
 #personal {
     text-align:left;
@@ -120,11 +99,9 @@ color:white
 #hobbies ul{
     text-align: left;
     list-style: inside;
-
     display: flex; 
     flex-direction: column; 
     align-items: center;
-
 }
 
 
@@ -143,7 +120,6 @@ border-bottom-right-radius: 15px;
 border-top-left-radius:15px ;
 font-family: 'Montserrat', sans-serif;
 font-weight: bold;
-
 }
 
 #contact fieldset{
@@ -153,7 +129,6 @@ margin-bottom: 1ex;
 font-family: 'Open Sans', sans-serif;
 font-style: oblique;
 color: #061a77;
-
 }
 
 #contact fieldset {
@@ -164,7 +139,7 @@ border-radius: 2em;
 
 #contact label{
     margin:.2ex;
-   }
+}
 
 #contact fieldset fieldset {
     grid-template-columns: 30px auto;
@@ -180,18 +155,22 @@ font-style: oblique;
 font-size: 25px;
 }
 
-
-
-
-
-
-
+.navbar-links li:hover {
+    background-color: rgb(255, 166, 0);
+    border-radius: 20px;
+}
 
 /* tablet size */
-@media screen and (min-width: 60em)  {
+@media screen and (min-width: 0.5em)  {
     figure {
         display:grid;
         grid-template-columns: 2fr 1fr;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.7;
+        margin-bottom: 40px;
     }
 
     figcaption {
@@ -202,6 +181,12 @@ font-size: 25px;
         margin-left: 1rem;
     }
 
+    #gallery img {
+        max-width: 100%;
+      
+
+}
+
     figure img {
         width:100%
     }
@@ -209,6 +194,32 @@ font-size: 25px;
     #lit div {
         max-width:100%;
         columns: 40rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2px;
+      }
+    
+      .navbar-brand {
+        margin-bottom: 2px;
+      }
+    
+      .navbar-links {
+        margin-top: 2px;
+      }
+    
+      .navbar-links li {
+        margin: 1px 0;
+      }
+
+      #myVideo {
+        max-width: 95%;
+        border-radius: 30px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }
@@ -232,7 +243,13 @@ font-size: 25px;
     figure {
         display: block;
     }
-    
+
+    #gallery img {
+            max-width: 100%;
+          
+
+    }
+
 }
 
 #myVideo {
@@ -241,7 +258,4 @@ font-size: 25px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    
-    
-
 }
